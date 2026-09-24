@@ -3,18 +3,36 @@
 <head>
    <title>Question 2 - CSS</title>
    <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
+    .mainsection h1 {
+      display: inline-block;
+      padding: 1.5rem 2.25rem;
+      background: #dedbc7 url("lab2/backgroundimg.gif");
+      color: #000;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2.5rem;
+      line-height: 1.5;
     }
 
-    
+    .mainsection a {
+      text-decoration: underline;
+      color: #414040;
+    }
+
+    .mainsection a:hover,
+    .mainsection a:focus {
+      color: #000;
+      text-decoration-thickness: 3px;
+    }
+
+    .mainsection a:focus {
+      outline: 3px solid #005fcc;
+      outline-offset: 2px;
+    }
     </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+<h1>Shopping categories</h1>
 
 <ul>
   <li><a href="#">Animals</a></li>
