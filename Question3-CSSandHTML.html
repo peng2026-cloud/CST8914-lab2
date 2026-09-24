@@ -7,7 +7,7 @@
     .button {
       background-color: #4CAF50;
       border: none;
-      color: white;
+      color: black; /* 7.56:1 on #4CAF50, was white at 2.78:1 */
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -17,13 +17,18 @@
       cursor: pointer;
     }
 
+    .button:focus {
+      outline: 3px solid white;
+      outline-offset: 2px;
+    }
+
     body {
       padding: 20px;
       background-color: #2f2f2f;
     }
 
     h1, h2, p {
-      color: black;
+      color: white; /* 13.39:1 on #2f2f2f, was black at 1.57:1 */
     }
   </style>
 </head>
@@ -34,7 +39,7 @@
 
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
+  <button type="submit" class="button">Submit answers</button>
 
 </body>
 
